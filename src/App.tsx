@@ -10,7 +10,7 @@ function App() {
             <AnimatePresence exitBeforeEnter>
                 <HashRouter>
                     <div className="MenuBar">
-                        <Link to="/"><img src={"avaritia-icon.png"} width={100} height={100} alt="ICON"/></Link>
+                        <Link to="/"><img src={"logo.png"} width={80} height={80} style={{padding:'10px'}} alt="ICON"/></Link>
                         <Link to="/"><h1>Modded<br/>マイクラ学園</h1></Link>
 
                         <div className="MenuContainer">
@@ -20,7 +20,6 @@ function App() {
                             <div className="MenuItem">参加する</div>
                         </div>
                     </div>
-
                 </HashRouter>
             </AnimatePresence>
         </div>
