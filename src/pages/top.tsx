@@ -7,9 +7,10 @@ const Button = styled.a`
     background-color: transparent;
     border: 1px solid black;
     display: block;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: lighter;
     color: black;
+    padding-top: 25px;
     font-family: 'Open Sans', sans-serif;
     height: 7rem;
     width: 40rem;
@@ -41,6 +42,7 @@ export default function TopPage() {
                 textAlign: "center",
                 verticalAlign: "middle",
                 fontWeight: "lighter",
+                lineHeight: '90px',
                 fontSize: "75px",
                 marginTop: "75px",
                 marginBottom: '75px',
