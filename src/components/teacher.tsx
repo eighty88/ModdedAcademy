@@ -15,7 +15,8 @@ export default function TeacherData(name: string, dp: string, race: string, age:
                 <div style={{
                     display: "inline-block",
                     fontSize: '25px',
-                    lineHeight: '35px'
+                    lineHeight: '35px',
+                    fontWeight: 'lighter'
                 }}>
                     名前: {name}<br />
                     担当: {dp}<br />
