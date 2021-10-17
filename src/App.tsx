@@ -8,6 +8,7 @@ import styled from "styled-components";
 // @ts-ignore
 import { Scrollbars } from 'react-custom-scrollbars';
 import TopPage from "./pages/top";
+import History from "./pages/history";
 
 const Container = styled.div`
     width: 100%;
@@ -21,13 +22,15 @@ const Container = styled.div`
 
 const H1 = styled.h1`
     height: 100px;
-    margin-block-start: 0.2em;
-    margin-block-end: 0.2em;
+    font-size: 24px;
+    margin-block-start: 0.1em;
+    margin-block-end: 0.1em;
     display: inline-block;
     background: -webkit-linear-gradient(0deg, #ACB6E6, #86FDE9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: normal;
+    letter-spacing: 3px;
 `;
 
 function App() {
@@ -37,12 +40,12 @@ function App() {
                 <HashRouter>
                     <div className="MenuBar">
                         <Link to="/"><img src={"logo.png"} width={80} height={80} style={{padding:'10px'}} alt="ICON"/></Link>
-                        <Link to="/"><H1>Modded<br/>マイクラ学園</H1></Link>
+                        <Link to="/"><H1>Minecraft<br />Modded<br />Academy</H1></Link>
 
                         <div className="MenuContainer">
                             <Link to="/" className="MenuItem">教員一覧</Link>
                             <Link to="/" className="MenuItem">学科一覧</Link>
-                            <Link to="/" className="MenuItem">歴史</Link>
+                            <Link to="/history" className="MenuItem">歴史</Link>
                             <a href="https://discord.com/invite/nVGDSwGrYX" className="MenuItem">参加する</a>
                         </div>
                     </div>
@@ -52,6 +55,7 @@ function App() {
                             <Scrollbars style={{ width: '80vw', height: 'auto'}}>
                                 <Switch>
                                     <Route path="/" exact component={TopPage} />
+                                    <Route path="/history" component={History} />
                                 </Switch>
                             </Scrollbars>
                         </div>
