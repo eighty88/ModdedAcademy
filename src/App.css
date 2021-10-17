@@ -66,9 +66,9 @@
 
 .Page {
   width: 80vw;
-  height: 65vh;
+  height: 75vh;
   position: absolute;
-  top: 25vh;
+  top: 20vh;
   left: 10vw;
   justify-content: center;
   display: flex;

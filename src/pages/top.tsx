@@ -48,7 +48,7 @@ export default function TopPage() {
                     fontWeight: "lighter",
                     lineHeight: '90px',
                     fontSize: "75px",
-                    marginTop: "75px",
+                    marginTop: "150px",
                     marginBottom: '75px',
                 }}>
                     Welcome to<br/>

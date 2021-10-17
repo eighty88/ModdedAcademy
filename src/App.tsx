@@ -44,7 +44,7 @@ function App() {
 
                         <div className="MenuContainer">
                             <Link to="/teachers" className="MenuItem">教員一覧</Link>
-                            <Link to="/departments" className="MenuItem">学科一覧</Link>
+                            <Link to="/departments" className="MenuItem">学科・部一覧</Link>
                             <Link to="/history" className="MenuItem">歴史</Link>
                             <a href="https://discord.com/invite/nVGDSwGrYX" className="MenuItem">参加する</a>
                         </div>
