@@ -3,6 +3,16 @@ import './App.css';
 // @ts-ignore
 import {HashRouter, Route, Switch, Link } from "react-router-dom";
 import {AnimatePresence} from 'framer-motion';
+// @ts-ignore
+import styled from "styled-components";
+
+const Container = styled.div`
+    width: 100%;
+    height: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: block;
+`;
 
 function App() {
     return (
@@ -20,6 +30,9 @@ function App() {
                             <Link to="/" className="MenuItem">参加する</Link>
                         </div>
                     </div>
+                    <Container>
+
+                    </Container>
                 </HashRouter>
             </AnimatePresence>
         </div>
