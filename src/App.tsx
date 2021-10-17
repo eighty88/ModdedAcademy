@@ -7,6 +7,8 @@ import {AnimatePresence} from 'framer-motion';
 import styled from "styled-components";
 import TopPage from "./pages/top";
 import History from "./pages/history";
+import Teachers from "./pages/teachers";
+import Departments from "./pages/departments";
 
 const Container = styled.div`
     width: 100%;
@@ -41,8 +43,8 @@ function App() {
                         <Link to="/"><H1>Minecraft<br />Modded<br />Academy</H1></Link>
 
                         <div className="MenuContainer">
-                            <Link to="/" className="MenuItem">教員一覧</Link>
-                            <Link to="/" className="MenuItem">学科一覧</Link>
+                            <Link to="/teachers" className="MenuItem">教員一覧</Link>
+                            <Link to="/departments" className="MenuItem">学科一覧</Link>
                             <Link to="/history" className="MenuItem">歴史</Link>
                             <a href="https://discord.com/invite/nVGDSwGrYX" className="MenuItem">参加する</a>
                         </div>
@@ -52,6 +54,8 @@ function App() {
                         <div className="Page">
                             <Switch>
                                 <Route path="/" exact component={TopPage} />
+                                <Route path="/teachers" component={Teachers} />
+                                <Route path="/departments" component={Departments} />
                                 <Route path="/history" component={History} />
                             </Switch>
                         </div>
