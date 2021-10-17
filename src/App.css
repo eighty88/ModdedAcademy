@@ -22,6 +22,7 @@ h1 {
   background: -webkit-linear-gradient(0deg, #ACB6E6, #86FDE9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: normal;
 }
 
 .MenuContainer {
