@@ -18,7 +18,7 @@ export default function TeacherData(name: string, dp: string, race: string, age:
                     lineHeight: '35px'
                 }}>
                     名前: {name}<br />
-                    学科: {dp}学科<br />
+                    担当: {dp}<br />
                     種族: {race}<br/>
                     年齢: {age}歳<br/>
                     特技: {ss}
