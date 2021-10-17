@@ -2,16 +2,6 @@
   width: 100%;
   height: 100vh;
   overflow-y: hidden;
-  z-index: -100;
-}
-
-.Container-Background {
-  width: 100%;
-  z-index: -5;
-  height: 100vh;
-  overflow-y: hidden;
-  background-size: cover;
-  background: url("./images/background.png") no-repeat center;
 }
 
 .MenuBar {
@@ -20,21 +10,9 @@
   padding: 0;
   height: 100px;
   width: 100%;
-  z-index: 10;
   display: flex;
   text-align: left;
   background-color: rgba(27, 30, 66, 0.75);
-}
-
-h1 {
-  height: 100px;
-  margin-block-start: 0.2em;
-  margin-block-end: 0.2em;
-  display: inline-block;
-  background: -webkit-linear-gradient(0deg, #ACB6E6, #86FDE9);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: normal;
 }
 
 .MenuContainer {
@@ -75,9 +53,18 @@ h1 {
   transform: scale(1, 1);
 }
 
+.Container-Background {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden;
+  background-size: cover;
+  background: url("./images/background.png") no-repeat center;
+}
+
 .Page {
   width: 80vw;
-  height: auto;
+  height: 75vh;
   position: absolute;
   top: 25vh;
   left: 10vw;

@@ -7,6 +7,7 @@ import {AnimatePresence} from 'framer-motion';
 import styled from "styled-components";
 // @ts-ignore
 import { Scrollbars } from 'react-custom-scrollbars';
+import TopPage from "./pages/top";
 
 const Container = styled.div`
     width: 100%;
@@ -15,8 +16,18 @@ const Container = styled.div`
     margin : 0 auto;
     padding : 0;
     position: fixed;
-    z-index: -1;
     top: 0;
+`;
+
+const H1 = styled.h1`
+    height: 100px;
+    margin-block-start: 0.2em;
+    margin-block-end: 0.2em;
+    display: inline-block;
+    background: -webkit-linear-gradient(0deg, #ACB6E6, #86FDE9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: normal;
 `;
 
 function App() {
@@ -26,7 +37,7 @@ function App() {
                 <HashRouter>
                     <div className="MenuBar">
                         <Link to="/"><img src={"logo.png"} width={80} height={80} style={{padding:'10px'}} alt="ICON"/></Link>
-                        <Link to="/"><h1>Modded<br/>マイクラ学園</h1></Link>
+                        <Link to="/"><H1>Modded<br/>マイクラ学園</H1></Link>
 
                         <div className="MenuContainer">
                             <Link to="/" className="MenuItem">教員一覧</Link>
@@ -38,10 +49,10 @@ function App() {
                     <Container>
                         <div className="Container-Background" />
                         <div className="Page">
-                            <Scrollbars style={{ width: '80vw', height: 'auto' }}>
-                                <Route>
-
-                                </Route>
+                            <Scrollbars style={{ width: '80vw', height: '75vh' }}>
+                                <Switch>
+                                    <Route path="/" exact component={TopPage} />
+                                </Switch>
                             </Scrollbars>
                         </div>
                     </Container>
