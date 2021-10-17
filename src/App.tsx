@@ -39,7 +39,7 @@ function App() {
             <AnimatePresence exitBeforeEnter>
                 <HashRouter>
                     <div className="MenuBar">
-                        <Link to="/"><img src={"logo.png"} width={80} height={80} style={{padding:'10px'}} alt="ICON"/></Link>
+                        <Link to="/"><img src={"logo.png"} width={90} height={90} style={{padding:'10px'}} alt="ICON"/></Link>
                         <Link to="/"><H1>Minecraft<br />Modded<br />Academy</H1></Link>
 
                         <div className="MenuContainer">
