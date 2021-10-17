@@ -49,7 +49,7 @@ function App() {
                     <Container>
                         <div className="Container-Background" />
                         <div className="Page">
-                            <Scrollbars style={{ width: '80vw', height: '75vh' }}>
+                            <Scrollbars style={{ width: '80vw', height: 'auto'}}>
                                 <Switch>
                                     <Route path="/" exact component={TopPage} />
                                 </Switch>
