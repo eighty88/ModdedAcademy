@@ -10,6 +10,8 @@
   padding: 0;
   height: 100px;
   width: 100%;
+  z-index: 100;
+  position: absolute;
   display: flex;
   text-align: left;
   background-color: rgba(27, 30, 66, 0.75);
