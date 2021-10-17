@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/ModdedAcademy/static/css/main.99a2ca6e.chunk.css",
+    "main.js": "/ModdedAcademy/static/js/main.cc13d899.chunk.js",
+    "main.js.map": "/ModdedAcademy/static/js/main.cc13d899.chunk.js.map",
+    "runtime-main.js": "/ModdedAcademy/static/js/runtime-main.dbf12a07.js",
+    "runtime-main.js.map": "/ModdedAcademy/static/js/runtime-main.dbf12a07.js.map",
+    "static/js/2.d36b0107.chunk.js": "/ModdedAcademy/static/js/2.d36b0107.chunk.js",
+    "static/js/2.d36b0107.chunk.js.map": "/ModdedAcademy/static/js/2.d36b0107.chunk.js.map",
+    "index.html": "/ModdedAcademy/index.html",
+    "static/css/main.99a2ca6e.chunk.css.map": "/ModdedAcademy/static/css/main.99a2ca6e.chunk.css.map",
+    "static/js/2.d36b0107.chunk.js.LICENSE.txt": "/ModdedAcademy/static/js/2.d36b0107.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/ModdedAcademy/static/media/background.1cf0a567.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dbf12a07.js",
+    "static/js/2.d36b0107.chunk.js",
+    "static/css/main.99a2ca6e.chunk.css",
+    "static/js/main.cc13d899.chunk.js"
+  ]
+}
