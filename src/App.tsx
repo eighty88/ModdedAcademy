@@ -7,11 +7,14 @@ import {AnimatePresence} from 'framer-motion';
 import styled from "styled-components";
 
 const Container = styled.div`
+    z-index: -10;
     width: 100%;
-    height: 100%;
-    padding-top: 0;
-    padding-bottom: 0;
-    display: block;
+    display: flex;
+    height: 100vh;
+    margin : 0 auto;
+    padding : 0;
+    position: fixed;
+    top: 0;
 `;
 
 function App() {
@@ -27,7 +30,7 @@ function App() {
                             <Link to="/" className="MenuItem">教員一覧</Link>
                             <Link to="/" className="MenuItem">学科一覧</Link>
                             <Link to="/" className="MenuItem">歴史</Link>
-                            <Link to="/" className="MenuItem">参加する</Link>
+                            <a href="https://discord.com/invite/nVGDSwGrYX" className="MenuItem">参加する</a>
                         </div>
                     </div>
                     <Container>
