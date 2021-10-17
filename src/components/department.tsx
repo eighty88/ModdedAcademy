@@ -11,7 +11,7 @@ export default function DepartmentData(name: string, n: string) {
                     lineHeight: '35px',
                     fontWeight: 'lighter'
                 }}>
-                    <div style={{ fontSize: '40px', display: 'inline-block', margin: '25px'}}>{name}</div>
+                    <div style={{ fontSize: '40px', display: 'inline-block', margin: '50px'}}>{name}</div>
                     <div style={{ display: 'inline-block'}}>定員: {n}</div>
                 </div>
             </IconContext.Provider>
