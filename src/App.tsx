@@ -5,8 +5,6 @@ import {HashRouter, Route, Switch, Link } from "react-router-dom";
 import {AnimatePresence} from 'framer-motion';
 // @ts-ignore
 import styled from "styled-components";
-// @ts-ignore
-import { Scrollbars } from 'react-custom-scrollbars';
 import TopPage from "./pages/top";
 import History from "./pages/history";
 
@@ -52,12 +50,10 @@ function App() {
                     <Container>
                         <div className="Container-Background" />
                         <div className="Page">
-                            <Scrollbars style={{ width: '80vw', height: 'auto'}}>
-                                <Switch>
-                                    <Route path="/" exact component={TopPage} />
-                                    <Route path="/history" component={History} />
-                                </Switch>
-                            </Scrollbars>
+                            <Switch>
+                                <Route path="/" exact component={TopPage} />
+                                <Route path="/history" component={History} />
+                            </Switch>
                         </div>
                     </Container>
                 </HashRouter>
