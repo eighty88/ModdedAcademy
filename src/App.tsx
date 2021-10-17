@@ -5,15 +5,17 @@ import {HashRouter, Route, Switch, Link } from "react-router-dom";
 import {AnimatePresence} from 'framer-motion';
 // @ts-ignore
 import styled from "styled-components";
+// @ts-ignore
+import { Scrollbars } from 'react-custom-scrollbars';
 
 const Container = styled.div`
-    z-index: -10;
     width: 100%;
     display: flex;
     height: 100vh;
     margin : 0 auto;
     padding : 0;
     position: fixed;
+    z-index: -1;
     top: 0;
 `;
 
@@ -34,7 +36,14 @@ function App() {
                         </div>
                     </div>
                     <Container>
+                        <div className="Container-Background" />
+                        <div className="Page">
+                            <Scrollbars style={{ width: '80vw', height: 'auto' }}>
+                                <Route>
 
+                                </Route>
+                            </Scrollbars>
+                        </div>
                     </Container>
                 </HashRouter>
             </AnimatePresence>
