@@ -3,7 +3,7 @@ import {Variants} from "../Animate";
 // @ts-ignore
 import {Scrollbars} from 'react-custom-scrollbars';
 
-import './history.css'
+import './chronology.css'
 
 export default function History() {
     return (
