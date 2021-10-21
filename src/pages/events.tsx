@@ -1,13 +1,14 @@
 import {motion} from "framer-motion";
 import {Variants} from "../Animate";
+import React from 'react';
 // @ts-ignore
 import {Scrollbars} from 'react-custom-scrollbars';
 
 import './chronology.css'
+import {EventList} from "../data/event";
 
 export default function Events() {
     return (
-
         <Scrollbars style={{width: '80vw', height: 'auto'}}>
             <motion.div
                 initial={"initial"}
@@ -24,18 +25,31 @@ export default function Events() {
                 }}>
                     年間行事
                 </h1>
-                <dl>
-                    <dt>1919年7月</dt>
-                    <dd>
-                        <h2>創設</h2>
-                        <p>なぜこの日になってしまったのか。<br/>とりあえず日を隠していい感じにする</p>
-                    </dd>
-                    <dt>2021年??月</dt>
-                    <dd>
-                        <h2>いもとり氏学長代理就任</h2>
-                        <p>第22代目学長の逮捕に伴って<br/>立候補制で<s>適当に</s>募集をかけたところ<br/>一人だけだったため学長代理に就任<br />何書いたらいいかわからなかったのでとりあえず適当な作り話</p>
-                    </dd>
-                </dl>
+                <div>
+                    {(() => {
+                        // @ts-ignore
+                        const items = [];
+
+                        EventList.forEach(
+                            (item) => {
+                                items.push(
+                                    <dl>
+                                        <dt>
+                                            {item.date}月
+                                        </dt>
+                                        <dd>
+                                            <h2> {item.title} </h2>
+                                            <p> {item.text.split('\n').map((str, index) => (
+                                                <React.Fragment key={index}><br/>{str}</React.Fragment>))} </p>
+                                        </dd>
+                                    </dl>
+                                )
+                            }
+                        )
+                        // @ts-ignore
+                        return <div>{ items }</div>
+                    })()}
+                </div>
             </motion.div>
         </Scrollbars>
     );

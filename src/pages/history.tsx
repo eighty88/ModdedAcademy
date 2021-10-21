@@ -9,7 +9,6 @@ import {Histories} from "../data/history";
 
 export default function History() {
     return (
-
         <Scrollbars style={{width: '80vw', height: 'auto'}}>
             <motion.div
                 initial={"initial"}
