@@ -1,9 +1,11 @@
 import {motion} from "framer-motion";
 import {Variants} from "../Animate";
+import React from 'react';
 // @ts-ignore
 import {Scrollbars} from 'react-custom-scrollbars';
 
 import './chronology.css'
+import {Histories} from "../data/history";
 
 export default function History() {
     return (
@@ -24,6 +26,28 @@ export default function History() {
                 }}>
                     学園の歴史
                 </h1>
+                <dl>
+                    {(() => {
+                        // @ts-ignore
+                        const items = [];
+
+                        Histories.forEach(
+                            item => {
+                                items.push(<>
+                                    <dt>
+                                        { item.date.toString().substring(0, 4) }年{ item.date.toString().substring(4, 6) }月
+                                    </dt>
+                                    <dd>
+                                        <h2> { item.title } </h2>
+                                        <p> { item.text.split('\n').map((str, index) => (<React.Fragment key={index}><br />{str}</React.Fragment>))} </p>
+                                    </dd>
+                                </>)
+                            }
+                        )
+                        // @ts-ignore
+                        return <div>{ items }</div>
+                    })()}
+                </dl>
                 <dl>
                     <dt>1919年7月</dt>
                     <dd>
