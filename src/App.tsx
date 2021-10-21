@@ -10,6 +10,7 @@ import History from "./pages/history";
 import Teachers from "./pages/teachers";
 import Departments from "./pages/departments";
 import Rules from "./pages/rules";
+import Events from "./pages/events";
 
 const Container = styled.div`
     width: 100%;
@@ -48,6 +49,7 @@ function App() {
                             <Link to="/departments" className="MenuItem">学科・部一覧</Link>
                             <Link to="/history" className="MenuItem">歴史</Link>
                             <Link to="/rules" className="MenuItem">校則</Link>
+                            <Link to="/events" className="MenuItem">年間行事</Link>
                             <a href="https://discord.com/invite/nVGDSwGrYX" className="MenuItem">参加する</a>
                         </div>
                     </div>
@@ -60,6 +62,7 @@ function App() {
                                 <Route path="/departments" component={Departments} />
                                 <Route path="/history" component={History} />
                                 <Route path="/rules" component={Rules} />
+                                <Route path="/events" component={Events} />
                             </Switch>
                         </div>
                     </Container>
