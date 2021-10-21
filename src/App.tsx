@@ -9,7 +9,7 @@ import TopPage from "./pages/top";
 import History from "./pages/history";
 import Teachers from "./pages/teachers";
 import Departments from "./pages/departments";
-import Rules from "./pages/Rules";
+import Rules from "./pages/rules";
 
 const Container = styled.div`
     width: 100%;
