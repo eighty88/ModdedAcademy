@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ModdedAcademy/static/css/main.2f1d2e08.chunk.css",
-    "main.js": "/ModdedAcademy/static/js/main.0934edd2.chunk.js",
-    "main.js.map": "/ModdedAcademy/static/js/main.0934edd2.chunk.js.map",
+    "main.js": "/ModdedAcademy/static/js/main.a195019b.chunk.js",
+    "main.js.map": "/ModdedAcademy/static/js/main.a195019b.chunk.js.map",
     "runtime-main.js": "/ModdedAcademy/static/js/runtime-main.dbf12a07.js",
     "runtime-main.js.map": "/ModdedAcademy/static/js/runtime-main.dbf12a07.js.map",
     "static/js/2.12c6085f.chunk.js": "/ModdedAcademy/static/js/2.12c6085f.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.dbf12a07.js",
     "static/js/2.12c6085f.chunk.js",
     "static/css/main.2f1d2e08.chunk.css",
-    "static/js/main.0934edd2.chunk.js"
+    "static/js/main.a195019b.chunk.js"
   ]
 }
