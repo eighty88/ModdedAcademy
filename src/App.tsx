@@ -28,7 +28,7 @@ function App() {
             <AnimatePresence exitBeforeEnter>
                 <HashRouter>
                     <div className="MenuBar">
-                        <Link to="/"><img src={"images/header.png"} width={270} height={90} style={{padding:'10px'}} alt="ICON"/></Link>
+                        <Link to="/"><img src={"header.png"} width={270} height={90} style={{padding:'10px'}} alt="ICON"/></Link>
 
                         <div className="MenuContainer">
                             <Link to="/teachers" className="MenuItem">教員一覧</Link>
