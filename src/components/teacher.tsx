@@ -20,8 +20,7 @@ export default function TeacherData(name: string, dp: string, race: string, age:
                     名前: {name}<br />
                     担当: {dp}<br />
                     種族: {race}<br/>
-                    年齢: {age}歳<br/>
-                    特技: {ss}
+                    解説: {ss}
                 </div>
             </IconContext.Provider>
         </div>
