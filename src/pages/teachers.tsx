@@ -31,7 +31,6 @@ export default function Teachers() {
                         // @ts-ignore
                         items.push(<div>{ TeacherData(TeacherList[i].name, TeacherList[i].dp, TeacherList[i].race, TeacherList[i].age, TeacherList[i].ss) }</div>);
                     }
-                    // @ts-ignore
                     return <div>{ items }</div>
                 })()}
             </motion.div>

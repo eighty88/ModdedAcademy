@@ -24,14 +24,12 @@ export default function Departments() {
                     学科・部一覧
                 </h1>
                 {(() => {
-                    // @ts-ignore
                     const items = [];
                     // @ts-ignore
                     for (let i = 1; DepartmentList[i] !== undefined; i++) {
                         // @ts-ignore
                         items.push(<div>{ DepartmentData(DepartmentList[i].name, DepartmentList[i].n) }</div>);
                     }
-                    // @ts-ignore
                     return <div>{ items }</div>
                 })()}
             </motion.div>

@@ -22,27 +22,13 @@ const Container = styled.div`
     top: 0;
 `;
 
-const H1 = styled.h1`
-    height: 100px;
-    font-size: 24px;
-    margin-block-start: 0.1em;
-    margin-block-end: 0.1em;
-    display: inline-block;
-    background: -webkit-linear-gradient(0deg, #ACB6E6, #86FDE9);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: normal;
-    letter-spacing: 3px;
-`;
-
 function App() {
     return (
         <div className="App">
             <AnimatePresence exitBeforeEnter>
                 <HashRouter>
                     <div className="MenuBar">
-                        <Link to="/"><img src={"logo.png"} width={90} height={90} style={{padding:'10px'}} alt="ICON"/></Link>
-                        <Link to="/"><H1>Minecraft<br />Modded<br />Academy</H1></Link>
+                        <Link to="/"><img src={"images/header.png"} width={270} height={90} style={{padding:'10px'}} alt="ICON"/></Link>
 
                         <div className="MenuContainer">
                             <Link to="/teachers" className="MenuItem">教員一覧</Link>

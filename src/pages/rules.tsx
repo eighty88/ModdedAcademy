@@ -40,7 +40,6 @@ export default function Rules() {
                         // @ts-ignore
                         items.push(<DIV>{ Rule[i] }</DIV>);
                     }
-                    // @ts-ignore
                     return <div>{ items }</div>
                 })()}
             </motion.div>
