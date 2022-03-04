@@ -2,8 +2,7 @@ import {IconContext} from "react-icons";
 
 export default function DepartmentData(name: string, n: string) {
     return (
-        <div style={{
-        }}>
+        <div>
             <IconContext.Provider value={{size: '10em'}}>
                 <div style={{
                     display: "inline-block",
